@@ -8,6 +8,7 @@ export const receiveCurrentUser = currentUser => ({
   currentUser
 });
 
+//Might have to be removed
 export const receiveErrors = errors => ({
   type: RECEIVE_SESSION_ERRORS,
   errors
