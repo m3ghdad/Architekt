@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: stories
+#
+#  id         :integer          not null, primary key
+#  body       :string           not null
+#  title      :string           not null
+#  author_id  :integer          not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 require 'test_helper'
 
 class StoryTest < ActiveSupport::TestCase
