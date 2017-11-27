@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
-import {login, logout, signup} from './actions/session_actions';
+import { login, logout, signup } from './actions/session_actions';
+import { fetchStories } from './actions/story_actions';
 //FOR TESTING ... importing to test login, logout and signup requests
 import * as APIUtil from './util/session_api_util';
 
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //FOR TESTING
   window.getState = store.getState;
   window.dispatch = store.dispatch;
+  window.fetchStories = fetchStories;
 
   window.login = login;
   window.logout = logout;
