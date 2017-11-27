@@ -29,7 +29,6 @@ class SessionForm extends React.Component{
   }
 
   render(){
-    let text = this.props.formType==="login"? "Sign in" : "Sign up";
     let buttonText = this.props.formType==="login"? "Sign In" : "Sign Up";
     return (
       <div className="modal is-open">
