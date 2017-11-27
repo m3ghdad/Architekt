@@ -18,12 +18,12 @@ class Api::StoriesController < ApplicationController
     render :show
   end
 
-  def destory
+  def destroy
     @story = current_user.stories.find(params[:id])
     @story.destroy
     render :show
   end
-
+  
   def update
     @story = current_user.stories.find(params[:id])
     if @story.update(story_params)

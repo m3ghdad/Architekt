@@ -7,9 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
 Story.destroy_all
-
+ 
 user1 = User.create!(email: 'm@m.com', password: 'cleverPassword')
 user2 = User.create!(email: 'j@j.com', password: 'secretPassword')
+user3 = User.create!(email: 'k@k.com', password: '123456ImSmart')
 
 story1 = Story.create!(title: 'chocolate cupcake',
   body: 'Chocolate cake tootsie roll cupcake lemon drops cotton candy topping cotton candy icing.
@@ -24,3 +25,9 @@ story2 = Story.create!(title: 'souffle marzipan',
   I love candy canes candy carrot cake bonbon pudding.
   Donut I love caramels dessert cotton candy ice cream fruitcake cotton candy sweet.',
   author_id: user2.id)
+
+story3 = Story.create!(title: 'cupcake color',
+  body: 'Cupcake ipsum dolor.
+  Sit amet jelly beans cookie jujubes marshmallow cookie jelly-o chocolate cake.
+  Topping sweet tootsie roll sesame snaps cupcake gummi bears carrot cake.',
+  author_id: user3.id)
