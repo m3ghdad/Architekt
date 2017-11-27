@@ -30,7 +30,7 @@ export const createStory = story => dispatch => {
 export const updateStory = story => {
   return APIUtil.updateStory(story)
     .then(story => dispatch(receiveSingleStory(story)))
-}
+};
 
 export const deleteStory = story => dispatch => {
   return APIUtil.deleteStory(story)
