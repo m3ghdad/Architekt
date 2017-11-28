@@ -27,7 +27,6 @@ class StoryIndexItem extends React.Component {
     wrapper.innerHTML = story.body;
     return wrapper.textContent;
   }
-
 }
 
 export default StoryIndexItem;
