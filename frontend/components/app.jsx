@@ -3,8 +3,7 @@ import GreetingContainer from './greeting/greeting_container';
 import { Route, Link, Switch } from 'react-router-dom'
 import SessionFormContainer from './session_form/session_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
-import { StoriesIndexContainer } from './stories/stories_index_container';
-
+import StoriesIndexContainer  from './stories/stories_index_container';
 
 const App = () => (
   <div>
@@ -19,7 +18,6 @@ const App = () => (
       <AuthRoute path="/signup" component={ SessionFormContainer } />
       <Route path="/" exact component={ StoriesIndexContainer } />
     </Switch>
-
   </div>
 );
 

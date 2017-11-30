@@ -30,3 +30,38 @@ class StoryIndexItem extends React.Component {
 }
 
 export default StoryIndexItem;
+
+
+
+//
+// import React from 'react';
+// import { withRouter } from 'react-router-dom';
+//
+// class StoryIndexItem extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.handleClick = this.handleClick.bind(this);
+//   }
+//
+//   handleClick() {
+//     const storyId = this.props.story.id;
+//     this.props.history.push(`/stories/${storyId}`);
+//   }
+//
+//   render() {
+//     const { title, body } = this.props.story;
+//     return (
+//       <div
+//         className="story-index-item"
+//         onClick={this.handleClick}
+//       >
+//         <div className="index-item-info">
+//           <span className="index-item-category">Body:</span>
+//           <span className="index-item-copy">{body}</span>
+//         </div>
+//       </div>
+//     );
+//   }
+// }
+//
+// export default withRouter(StoryIndexItem);
